@@ -159,8 +159,6 @@ ul {
 
 /* Hero  */
 .hero {
-  /* padding-top: 200px; */
-  /* padding-bottom: 200px; */
   text-align: center;
 }
 
@@ -215,12 +213,14 @@ ul {
 }
 
 .features-list .feature-icon {
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-list-title {
@@ -301,23 +301,24 @@ ul {
 }
 
 .staff-icons {
-  padding-left: 32px;
-  padding-right: 32px;
   margin-top: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.staff-icons > .item {
-  height: 44px;
+.staff-icons > .item + .item {
+  margin-left: 10px;
 }
 
 .staff-icons .link {
-  padding: 12px;
-  display: block;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: var(--default-icon-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .staff-icons .link:hover {
@@ -331,12 +332,19 @@ ul {
   display: flex;
 }
 
+.brand-list > .item {
+  width: calc(100% / 6);
+  height: 92px;
+}
+
 .brand-list > .item + .item {
   margin-left: 30px;
 }
 
 .brand-list .link {
-  padding: 15px 31px;
+  box-sizing: border-box;
+  height: 100%;
+  /* padding: 15px 31px; */
   display: block;
   border: 1px solid var(--default-icon-color);
   border-radius: 4px;
@@ -344,7 +352,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .brand-list .link:hover {
@@ -402,21 +409,20 @@ ul {
   display: flex;
 }
 
-.footer-socials-list > .item {
-  height: 44px;
-}
-
 .footer-socials-list > .item + .item {
   margin-left: 10px;
 }
 
 .footer-socials-list .link {
-  display: block;
-  padding: 12px;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: var(--secondary-light-color);
   background-color: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-socials-list .link:hover {
